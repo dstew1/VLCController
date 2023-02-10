@@ -2,11 +2,12 @@ import time
 import subprocess
 from pathlib import Path
 
-# Use the vlc command line tool to control the media player
-vlc = Path("C:\\Program Files\\VideoLAN\\VLC\\vlc.exe")
+
+# Creating vlc variable for the executable file.
+vlc = Path("C:\\Program Files\\VideoLAN\\VLC\\vlc.exe") # Change this path to suit your machine.
 
 # The video to be played
-video = Path("C:\\Mediaplayer\\video.mp4")
+video = Path("C:\\Mediaplayer\\video.mp4") # Change this path to suit your machine.
 
 # Start playing the video
 player = subprocess.Popen([vlc, video])
